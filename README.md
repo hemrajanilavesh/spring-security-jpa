@@ -1,11 +1,11 @@
 
-# Spring Security with Java Persistence API on H2 embedded database
+# Spring Security with Java Persistence API on embedded H2 database
 
 
-![Java CI with Maven](https://github.com/hemrajanilavesh/spring-auth-jdbc-h2/actions/workflows/maven.yml/badge.svg)
+![Java CI with Maven](https://github.com/hemrajanilavesh/spring-security-jpa/actions/workflows/maven.yml/badge.svg)
 
 Using `spring-security` to implement 
-  - Basic Authentication with username / password 
+  - Basic Authentication with username / password which are stored in H2 Database
   - Authorization through Role Based Access Control
 
 | API  | Required Role | Description |
@@ -14,8 +14,8 @@ Using `spring-security` to implement
 | /greet/avenger | Avenger or Director | Only users with role `Avenger` or  `Director` can access this API
 | /greet/director | Director | Only users with role  `Director` can access this API
 
-  - Security Configuration can be found [here](https://github.com/hemrajanilavesh/spring-auth-jdbc-h2/blob/main/src/main/java/io/hemrlav/springsecurityjdbch2/config/SecurityConfiguration.java)
+  - Security Configuration can be found [here](https://github.com/hemrajanilavesh/spring-security-jpa/blob/main/src/main/java/io/hemrlav/springsecurityjpah2/config/SecurityConfiguration.java)
 
-  - Schema file for Users and Authorities can be found [here](https://github.com/hemrajanilavesh/spring-auth-jdbc-h2/blob/main/src/main/resources/schema.sql)
+  - Schema SQL for Users and Authorities can be found [here](https://github.com/hemrajanilavesh/spring-security-jpa/blob/main/src/main/resources/schema.sql)
 
-  - Data file which inserts sample users with roles can be found [here](https://github.com/hemrajanilavesh/spring-auth-jdbc-h2/blob/main/src/main/resources/data.sql)
+  - Data SQL which inserts sample users with roles can be found [here](https://github.com/hemrajanilavesh/spring-security-jpa/blob/main/src/main/resources/data.sql)
